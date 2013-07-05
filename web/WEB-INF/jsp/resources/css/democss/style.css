@@ -1,0 +1,167 @@
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+
+/* =Utility styles
+------------------------------------------------------------------- */
+.grad {
+    border: solid 1px #d8d8d8;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background: -moz-linear-gradient(100% 100% 90deg, #fff, #f9f9f9);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#efefef), to(#fff));
+}
+
+.blueButtonLink {
+    background-color: #6ab9ec;
+    padding: 3px 6px 5px 6px;
+    color: white;
+    font-weight: 500;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+}
+
+.blueButtonLink:hover{
+    background-color: #e28004;
+    border: none;
+}
+
+.backBtn {
+    padding: 8px 0 8px 40px;
+    background: url(../images/back.png) no-repeat;
+}
+
+/* =Layout 
+-------------------------------------------------------------------- */
+#wrap {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#uploader, #uploadSummary {
+    width:100%;
+    padding: 20px;
+    height: 210px;
+    border: solid 2px #ccc;
+    background-color: #fff;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+
+/* =Upload box
+-------------------------------------------------------------------- */
+#uploader {
+    float: left;
+    position: relative;
+}
+
+
+#fileField {
+    height: 0px; 
+    overflow: hidden;
+}
+
+#fileListWrap {
+    position: relative;
+    padding: 0 28px 0 0;
+}
+
+#fileList {
+    height: 130px;
+    overflow: auto;
+    margin: 0;
+}
+
+#addFiles {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+#addFiles:hover {
+    border: none;
+}
+
+    #fileList li {
+        margin: 0 0 0.4em 10px;
+    }
+    
+#controls {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* =Summary box 
+-------------------------------------------------------------------- */
+#uploadSummary {
+    margin: 0 0 0 420px;
+}
+
+    #uploadSummary h2 {
+        font-size: 1.2em;
+        padding: 0 0 0.5em 0;
+        margin: 0;
+    }
+    
+        #uploadSummary h2 span {
+            border-bottom: solid 2px #6ab9ec;
+            padding: 0 0 0.4em 0;
+            font-weight: normal;
+        }
+        
+    #uploadSummary h3 {
+        font-size: 1.2em;
+        margin: 0 0 0.2em 0;
+    }
+
+    #uploadSummary ol {
+        overflow: auto;
+    }
+
+        #uploadSummary ol li {
+            margin: 0 0 0.4em 10px;
+        }
+        
+    #uploadSummary p {
+        margin: 0 0 0.2em 0;
+        color: #999;
+        font-size: 0.8em;
+    }
+    
+#responseList {
+    margin: 20px 0 0 0;
+    height: 230px;
+    overflow: auto;
+}
+
+#fillerText {
+    text-align: center;
+    color: #ccc !important;
+    margin: 120px 0 0 0 !important;
+    font: 300 1.8em 'Yanone Kaffeesatz', Georgia, serif !important;
+}
+
+/* =Progress bar
+------------------------------------------------------------------- */
+#progressBarOuter {
+    border: solid 1px #d8d8d8;
+    margin: 20px 0 4px 0;
+}
+
+#progressBar {
+    height: 5px;
+    background-color: #6AB9EC;
+    width: 0px;
+}
+
+#progressMeta {
+    text-align: right;
+}
